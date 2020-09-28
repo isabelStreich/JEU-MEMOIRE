@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Isabel & Dmytro</title>
+    <link rel="stylesheet" href="css/tp.css">
+</head>
+
+<body>
+    <h1>Memory Game</h1>
+    <main>
+        <section>
+            <div class="game-status-details">
+                <span class="move-counter" id="tryCounter"></span>
+                <span class="timer" id="timer"></span>
+            </div>
+            <table id="myTable" class="game-board">
+                <tbody class="game-grid">
+                    <tr class="game-grid-row">
+                        <td class="game-card">
+                        </td>
+                        <td class="game-card">
+                        </td>
+                        <td class="game-card">
+                        </td>
+                        <td class="game-card">
+                        </td>
+                    </tr>
+                    <tr class="game-grid-row">
+                        <td class="game-card">
+                        </td>
+                        <td class="game-card">
+                        </td>
+                        <td class="game-card">
+                        </td>
+                        <td class="game-card">
+                        </td>
+                    </tr>
+                    <tr class="game-grid-row">
+                        <td class="game-card">
+                        </td>
+                        <td class="game-card">
+                        </td>
+                        <td class="game-card">
+                        </td>
+                        <td class="game-card">
+                        </td>
+                    </tr>
+                    <tr class="game-grid-row">
+                        <td class="game-card">
+                        </td>
+                        <td class="game-card">
+                        </td>
+                        <td class="game-card">
+                        </td>
+                        <td class="game-card">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="restart-button-div">
+                <input type="button" class="brown-button" id="restartButton" value="New Game">
+            </div>
+            <!--Alert on game over -->
+            <div class="modal" id="gameOverAlert">
+                <div class="modal-content">
+                    <span aria-label="close" role="button" class="close" id="closeAlert">&times;</span>
+                    <div class="modal-header">
+                        <h2>Game Over</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="message">
+                            <p>Congratulations! You successfully completed the game. </p>
+                            <p>You completed the game using <span id="totalGameTries"></span> tries in <span
+                                    id="totalGameTime"> seconds</span></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="brown-button" id="playAgain">Play Again</button>
+                        <button class="brown-button" id="exit">Exit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div>
+        <h4>Isabel & Dmytro team_Juillet_2020</h4>
+    </div>
+    <h3>Isabel & Dmytro team_Juillet_2020</h3>
+    <!-- <script>
+        window.addEventListener('DOMContentLoaded', function loaded(event) {
+            window.removeEventListener('DOMContentLoaded', loaded, false)
+            TEAM_ISABEL_DMYTRO.init()
+        }, false)
+    </script> -->
+    <script src="js/tp.js"></script>
+</body>
+
+</html>
